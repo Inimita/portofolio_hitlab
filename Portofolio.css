@@ -1,0 +1,253 @@
+body {
+    background-image: url("assets/mesh-gradient.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(17, 19, 29);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    padding: 40px;
+    font-size: 17px;
+    color: #0b1020;
+}
+
+.logo{
+    padding-left: 30px;
+    font-size: 15px;
+}
+
+a:hover{
+    color: #ffffff;;
+}
+
+.button{
+    padding-right: 20px;
+}
+
+.contact {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: white;
+    padding: 8px 18px;
+    margin-left: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact:hover{
+    color: rgb(17, 19, 29);
+}
+
+
+.main{
+    padding-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #0b1020;
+    padding-bottom: 100px;
+}
+
+.main h1{
+    font-size: 45px;
+    font-family: 'Inter', sans-serif;
+}
+
+.main p{
+    font-size: 20px;
+}
+
+.aboutMe{
+    padding-top: 110px;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.aboutMe p{
+    font-size: 18px;
+    padding: 40px;
+    margin-right: 50px;
+    color: rgba(11,16,32,0.75);
+}
+
+.aboutMe img{
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.skill {
+    padding: 80px 80px;
+    color: #0b1d3a;
+}
+
+.skill h2 {
+    caption-side: top;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.skill table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+section thead th {
+    text-align: left;
+    padding: 12px 10px;
+    font-weight: 600;
+    color: #0b1d3a;
+    border-bottom: 1px solid rgba(79, 83, 92, 0.5);
+}
+
+section td {
+    padding: 14px 10px;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.25);
+}
+
+section tbody tr:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+section th:first-child,
+section td:first-child {
+    width: 60px;
+    text-align: center;
+}
+
+footer {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.form {
+    width: 420px;
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.form p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #0b1d3a;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form label {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #0b1d3a;
+}
+
+.form input,
+.form textarea {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    background: rgba(255, 255, 255, 0.35);
+    color: #0b1d3a;
+}
+
+.form button {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+
+    background: linear-gradient(90deg, #2563eb, #1e40af);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    color: #0b1d3a;
+}
+
+.footer h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+.footer li {
+    font-size: 22px;
+}
+
+.footer i {
+    color: #1e40af;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.footer i:hover {
+    color: #2563eb;
+    transform: translateY(-4px);
+}
