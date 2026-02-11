@@ -157,6 +157,69 @@ section td:first-child {
     text-align: center;
 }
 
+.project {
+    padding: 60px 80px;
+}
+
+.project h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #0b1d3a;
+    padding-bottom: 30px;
+}
+
+/* GRID */
+.project ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 28px;
+}
+
+/* CARD */
+.project li {
+    border-radius: 18px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+}
+
+/* LINK BUNGKUS */
+.project li a {
+    text-decoration: none;
+    color: #0b1d3a;
+    display: block;
+}
+
+/* GAMBAR */
+.project img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+/* TEXT */
+.project p {
+    padding: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* HOVER EFFECT */
+.project li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+
+
 footer {
     padding-top: 80px;
     display: flex;
