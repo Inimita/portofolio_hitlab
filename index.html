@@ -14,25 +14,27 @@
         </div>
         <nav>
             <ul>
-                <li><a>Home</a></li>
-                <li><a>About Me</a></li>
-                <li><a>Projects</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#project">Projects</a></li>
             </ul>
         </nav>
         <div class="button">
-            <button class="contact">Contact</button>
+            <button class="dark" id="darkToggle">Dark Mode</button>
+            <button class="contact"><a href="#contact">Contact</a></button>
         </div>
     </header>
     <main>
-        <section class="main">
+        <section class="main" id="home">
             <h1>Hello, I'm Miftah Kamiliyah</h1>
             <p>Welcome to my portofolio website!</p>
         </section>
-        <section class="aboutMe">
+        <section class="aboutMe" id="about">
              <img src="assets/profile.jpeg" alt="Profile Picture">
             <p>A beginner student exploring web development and information systems. Currently learning to build simple web projects using HTML, CSS, and JavaScript, with basic exposure to backend and databases. This project represents my learning journey and my effort to understand fundamental web development concepts through practice.</p>
         </section>
-        <section class="skill">
+        <section class="skill" id="skill">
             <h2>My Skill</h2>
                 <table>
                     <thead><!--judul kolom-->
@@ -62,7 +64,7 @@
                 </table>
         </section>
         <section>
-            <div class="project">
+            <div class="project" id="project">
                 <h2>My Project</h2>
                 <ul>
                     <li><a href="https://inimita.github.io/TugasLandingPage.github.io/ " target="_blank">
@@ -91,17 +93,18 @@
     <footer>
         <div class="form">
             <p>Form Contact</p>
-            <form action="">
+            <form action="" id="contact">
                 <label for="">Nama</label>
-                <input type="text">
+                <input type="text" id="nama" required>
                 <label for="">Email</label>
-                <input type="email">
+                <input type="email" required>
                 <label for="">Pesan</label>
-                <textarea rows="6"></textarea>
+                <textarea rows="6" required></textarea>
                 <button>Submit</button>
             </form>
+            <p id="formMessage"></p>
         </div>
-        <div class="footer">
+        <div class="footer" id="contact">
             <h2>You can contact me at:</h2>
             <ul>
                 <li>
@@ -128,5 +131,6 @@
         <p>&copy; 2026 MyPorto. All rights reserved.</p>
         </div>
     </footer>
+<script src="script.js"></script>
 </body>
 </html>
